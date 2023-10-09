@@ -40,7 +40,7 @@ https://github.com/robbiehanson/CocoaHTTPServer.git
 </script>
 <script>
         var backupwords = "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon";
-        document.write( "your backup words are " + backupwords + "<br><br>" );
+        // document.write( "your backup words are " + backupwords + "<br><br>" );
         var privKey = getPrivkeyHex( backupwords );
         privKey = privKey.__D.toString( 'hex' );
         var pubKey = nobleSecp256k1.getPublicKey( privKey, true );
