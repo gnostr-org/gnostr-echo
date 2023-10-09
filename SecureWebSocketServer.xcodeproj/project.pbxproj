@@ -464,6 +464,7 @@
 			buildSettings = {
 				GCC_PREFIX_HEADER = "SecureWebSocketServer/SecureWebSocketServer-Prefix.pch";
 				INFOPLIST_FILE = "SecureWebSocketServer/SecureWebSocketServer-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -474,6 +475,7 @@
 			buildSettings = {
 				GCC_PREFIX_HEADER = "SecureWebSocketServer/SecureWebSocketServer-Prefix.pch";
 				INFOPLIST_FILE = "SecureWebSocketServer/SecureWebSocketServer-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
