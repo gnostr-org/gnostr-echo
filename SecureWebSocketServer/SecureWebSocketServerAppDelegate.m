@@ -12,6 +12,77 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 @synthesize window;
 
+
+
+
+- (void)awakeFromNib
+{
+    [self homePage:self];
+}
+
+#pragma mark Action methods
+
+- (IBAction)homePage:(id)sender
+{
+    [self loadPage:@"https://localhost:12345"];
+}
+
+- (IBAction)goToPage:(id)sender
+{
+    NSString * url = [NSString stringWithFormat:@"%@%@", @"https://", [_adressTextField stringValue]];
+    
+    if (![self validateUrl:url])
+    {
+        return;
+    }
+    
+    [self loadPage:url];
+}
+
+- (IBAction)goBackPage:(id)sender
+{
+    if (![_webView canGoBack])
+    {
+        return;
+    }
+    
+    [_webView goBack];
+}
+
+- (IBAction)goForwardPage:(id)sender
+{
+    if (![_webView canGoForward])
+    {
+        return;
+    }
+    
+    [_webView goForward];
+}
+
+#pragma mark Helper methods
+
+- (BOOL)validateUrl:(NSString*)url;
+{
+    NSString *urlRegEx = @"(http|https)://((\\w)*|([0-9]*)|([-|_])*)+([\\.|/]((\\w)*|([0-9]*)|([-|_])*))+";
+    NSPredicate *urlTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", urlRegEx];
+    return [urlTest evaluateWithObject:url];
+}
+
+- (void)loadPage:(NSString*)url
+{
+    [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
+}
+
+
+
+
+
+
+
+
+
+
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 	// Configure our logging framework.
