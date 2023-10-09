@@ -2,10 +2,12 @@
 <html>
 <head>
 <!-- REF:
-https://github.com/supertestnet/vanilla-js-nostr.git
+
+.git
 https://github.com/robbiehanson/CocoaHTTPServer.git
 -->
 <title>echo</title>
+<link rel="stylesheet" href="bootstrap.min.css">
 <script type="text/javascript" src="WebSocketTest.js"></script>
 <script type="text/javascript" src="WebSocketTest2.js"></script>
 <script src="https://bitcoincore.tech/apps/bitcoinjs-ui/lib/bitcoinjs-lib.js"></script>
@@ -50,7 +52,11 @@ https://github.com/robbiehanson/CocoaHTTPServer.git
         document.write( "your public key is " + pubKeyMinus2 + "<br><br>" );
 </script>
 </head>
-<body>
+<body class="mx-auto" style="margin: 20px; padding: 20px; width: 100%;">
+    
+      Centered element
+
+    
 <script>
         function normalizeRelayURL(e){let[t,...r]=e.trim().split("?");return"http"===t.slice(0,4)&&(t="ws"+t.slice(4)),"ws"!==t.slice(0,2)&&(t="wss://"+t),t.length&&"/"===t[t.length-1]&&(t=t.slice(0,-1)),[t,...r].join("?")}
         // var relay = "wss://offchain.pub";
@@ -222,14 +228,14 @@ https://github.com/robbiehanson/CocoaHTTPServer.git
         }
 </script>
 
-<a href="javascript:WebSocketTest()">Does my browser support WebSockets?</a><br/>
 <br/>
 <br/>
-    <a>Server Time</a> 
-    <a id='updateme'>not updated yet</a> 
-    
-    
+    <a>Server Time<br/></a>
+    <a id='updateme'>not updated yet</a>
+
+
     <script type="text/javascript">init();</script>
+    <a href="javascript:WebSocketTest()">WebSocketTest</a><br/>
 
 </body>
 </html>
