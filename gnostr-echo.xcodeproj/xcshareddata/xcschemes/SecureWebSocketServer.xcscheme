@@ -15,64 +15,65 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DC372DA2139969B600A8407D"
-               BuildableName = "SecureWebSocketServer.app"
-               BlueprintName = "SecureWebSocketServer"
-               ReferencedContainer = "container:SecureWebSocketServer.xcodeproj">
+               BuildableName = "gnostr-echo.app"
+               BlueprintName = "gnostr-echo"
+               ReferencedContainer = "container:gnostr-echo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      buildConfiguration = "Debug">
-      <Testables>
-      </Testables>
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DC372DA2139969B600A8407D"
-            BuildableName = "SecureWebSocketServer.app"
-            BlueprintName = "SecureWebSocketServer"
-            ReferencedContainer = "container:SecureWebSocketServer.xcodeproj">
+            BuildableName = "gnostr-echo.app"
+            BlueprintName = "gnostr-echo"
+            ReferencedContainer = "container:gnostr-echo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
+      <Testables>
+      </Testables>
    </TestAction>
    <LaunchAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DC372DA2139969B600A8407D"
-            BuildableName = "SecureWebSocketServer.app"
-            BlueprintName = "SecureWebSocketServer"
-            ReferencedContainer = "container:SecureWebSocketServer.xcodeproj">
+            BuildableName = "gnostr-echo.app"
+            BlueprintName = "gnostr-echo"
+            ReferencedContainer = "container:gnostr-echo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
+      buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DC372DA2139969B600A8407D"
-            BuildableName = "SecureWebSocketServer.app"
-            BlueprintName = "SecureWebSocketServer"
-            ReferencedContainer = "container:SecureWebSocketServer.xcodeproj">
+            BuildableName = "gnostr-echo.app"
+            BlueprintName = "gnostr-echo"
+            ReferencedContainer = "container:gnostr-echo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

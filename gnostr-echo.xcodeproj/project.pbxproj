@@ -57,14 +57,14 @@
 		DC1283DD14A66C01006112AB /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
 		DC1283DE14A66C01006112AB /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
 		DC1283DF14A66C01006112AB /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		DC372DA3139969B600A8407D /* SecureWebSocketServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureWebSocketServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC372DA3139969B600A8407D /* gnostr-echo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gnostr-echo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC372DA7139969B600A8407D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DC372DAA139969B600A8407D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		DC372DAB139969B600A8407D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		DC372DAC139969B600A8407D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		DC372DAF139969B600A8407D /* SecureWebSocketServer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SecureWebSocketServer-Info.plist"; sourceTree = "<group>"; };
+		DC372DAF139969B600A8407D /* gnostr-echo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "gnostr-echo-Info.plist"; sourceTree = "<group>"; };
 		DC372DB1139969B600A8407D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DC372DB3139969B600A8407D /* SecureWebSocketServer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SecureWebSocketServer-Prefix.pch"; sourceTree = "<group>"; };
+		DC372DB3139969B600A8407D /* gnostr-echo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gnostr-echo-Prefix.pch"; sourceTree = "<group>"; };
 		DC372DB4139969B600A8407D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DC372DB7139969B600A8407D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		DC372DB9139969B600A8407D /* SecureWebSocketServerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecureWebSocketServerAppDelegate.h; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 		DC372DA4139969B600A8407D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC372DA3139969B600A8407D /* SecureWebSocketServer.app */,
+				DC372DA3139969B600A8407D /* gnostr-echo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,9 +201,9 @@
 			isa = PBXGroup;
 			children = (
 				DC372E7F139D50DA00A8407D /* Xcode-Configurations */,
-				DC372DAF139969B600A8407D /* SecureWebSocketServer-Info.plist */,
+				DC372DAF139969B600A8407D /* gnostr-echo-Info.plist */,
 				DC372DB0139969B600A8407D /* InfoPlist.strings */,
-				DC372DB3139969B600A8407D /* SecureWebSocketServer-Prefix.pch */,
+				DC372DB3139969B600A8407D /* gnostr-echo-Prefix.pch */,
 				DC372DB4139969B600A8407D /* main.m */,
 				DC372DB6139969B600A8407D /* Credits.rtf */,
 			);
@@ -304,9 +304,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DC372DA2139969B600A8407D /* SecureWebSocketServer */ = {
+		DC372DA2139969B600A8407D /* gnostr-echo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC372DC1139969B700A8407D /* Build configuration list for PBXNativeTarget "SecureWebSocketServer" */;
+			buildConfigurationList = DC372DC1139969B700A8407D /* Build configuration list for PBXNativeTarget "gnostr-echo" */;
 			buildPhases = (
 				DC372D9F139969B600A8407D /* Sources */,
 				DC372DA0139969B600A8407D /* Frameworks */,
@@ -316,9 +316,9 @@
 			);
 			dependencies = (
 			);
-			name = SecureWebSocketServer;
+			name = "gnostr-echo";
 			productName = SecureWebSocketServer;
-			productReference = DC372DA3139969B600A8407D /* SecureWebSocketServer.app */;
+			productReference = DC372DA3139969B600A8407D /* gnostr-echo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -330,7 +330,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Voalte;
 			};
-			buildConfigurationList = DC372D9D139969B600A8407D /* Build configuration list for PBXProject "SecureWebSocketServer" */;
+			buildConfigurationList = DC372D9D139969B600A8407D /* Build configuration list for PBXProject "gnostr-echo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -343,7 +343,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC372DA2139969B600A8407D /* SecureWebSocketServer */,
+				DC372DA2139969B600A8407D /* gnostr-echo */,
 			);
 		};
 /* End PBXProject section */
@@ -462,8 +462,8 @@
 		DC372DC2139969B700A8407D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PREFIX_HEADER = "SecureWebSocketServer/SecureWebSocketServer-Prefix.pch";
-				INFOPLIST_FILE = "SecureWebSocketServer/SecureWebSocketServer-Info.plist";
+				GCC_PREFIX_HEADER = "SecureWebSocketServer/gnostr-echo-Prefix.pch";
+				INFOPLIST_FILE = "SecureWebSocketServer/gnostr-echo-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -473,8 +473,8 @@
 		DC372DC3139969B700A8407D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PREFIX_HEADER = "SecureWebSocketServer/SecureWebSocketServer-Prefix.pch";
-				INFOPLIST_FILE = "SecureWebSocketServer/SecureWebSocketServer-Info.plist";
+				GCC_PREFIX_HEADER = "SecureWebSocketServer/gnostr-echo-Prefix.pch";
+				INFOPLIST_FILE = "SecureWebSocketServer/gnostr-echo-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -484,7 +484,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DC372D9D139969B600A8407D /* Build configuration list for PBXProject "SecureWebSocketServer" */ = {
+		DC372D9D139969B600A8407D /* Build configuration list for PBXProject "gnostr-echo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC372DBF139969B700A8407D /* Debug */,
@@ -493,7 +493,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC372DC1139969B700A8407D /* Build configuration list for PBXNativeTarget "SecureWebSocketServer" */ = {
+		DC372DC1139969B700A8407D /* Build configuration list for PBXNativeTarget "gnostr-echo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC372DC2139969B700A8407D /* Debug */,
